@@ -1,7 +1,7 @@
 function produceDrivingRange(blockRange) {
   return function(one, two){
-    let oneNum = Integer.parseInt(one.slice(0,2))
-    let twoNum = Integer.parseInt(two.slice(0,2))
+    let oneNum = parseInt(one, 10)
+    let twoNum = parseInt(two, 10)
     let difference = Math.abs(oneNum - twoNum)
 
     if (difference < blockRange) {
