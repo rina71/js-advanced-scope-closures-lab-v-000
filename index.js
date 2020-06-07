@@ -5,9 +5,9 @@ function produceDrivingRange(blockRange) {
     let difference = Math.abs(oneNum - twoNum)
 
     if (difference < blockRange) {
-      return `within range by ${blockRange}`;
+      return `within range by ${difference}`;
     } else {
-      return `${difference} blocks out of range`;
+      return `${difference - blockRange} blocks out of range`;
     }
   }
 }
